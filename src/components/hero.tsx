@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen  bg-black/90 flex items-center justify-center">
+    <div className="relative h-screen  bg-black/90 flex items-center justify-center" id="#home">
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?auto=format&fit=crop&q=80"
           alt="Hero background"
-          className="w-full h-full object-cover object-left-top brightness-50 bg-fixed"
+          className="w-full h-full object-cover object-center brightness-50"
         />
       </div>
 

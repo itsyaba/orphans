@@ -96,9 +96,11 @@ const Navbar = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full mt-4">
-                      DONATE NOW
-                    </Button>
+                    <a href="#donate">
+                      <Button className="bg-charity-orange hover:bg-orange-600 text-white w-full mt-4">
+                        DONATE NOW
+                      </Button>
+                    </a>
                   </nav>
                 </SheetContent>
               </Sheet>
