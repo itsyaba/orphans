@@ -31,11 +31,11 @@ const Navbar = () => {
               404.483.3297
             </a>
             <a
-              href="mailto:gwen@huhtorphans.org"
+              href="mailto:huhtorphans21@gmail.com"
               className="flex items-center gap-2 hover:text-orange-500 transition-colors"
             >
               <Mail className="h-4 w-4" />
-              gwen@huhtorphans.org
+              Huhtorphans21@gmail.com
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-sm font-medium hover:text-orange-500 transition-colors"
+                      className="text-md font-medium hover:text-orange-500 transition-colors"
                     >
                       {link.label}
                     </a>

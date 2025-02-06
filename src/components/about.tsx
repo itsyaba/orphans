@@ -57,7 +57,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
-          className="text-5xl font-bold text-center mb-8 text-charity-orange"
+          className="text-5xl font-bold text-center mb-8 text-charity-orange uppercase"
         >
           Our Story
         </motion.h2>
