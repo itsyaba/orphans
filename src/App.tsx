@@ -1,14 +1,18 @@
 // import Navigation from "./components/ui/navigation";
 import About from "./components/about";
+import Contact from "./components/contact";
 import Donate from "./components/donate";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navbar from "./components/Navbar";
+import Programs from "./components/programs";
+import Partners from "./components/partners";
 import Project from "./components/project";
 import TornPaper from "./components/TornPaper";
 
 function App() {
   return (
-    <main className="min-h-screen">
+    <>
       <Navbar />
       <Hero />
       <About />
@@ -17,7 +21,11 @@ function App() {
         <TornPaper />
       </div>
       <Project />
-    </main>
+      <Programs />
+      <Partners />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

@@ -12,7 +12,7 @@ const Navbar = () => {
     { href: "#story", label: "OUR STORY" },
     { href: "#projects", label: "PROJECTS" },
     { href: "#programs", label: "PROGRAMS" },
-    { href: "#difference", label: "MAKE A DIFFERENCE" },
+    // { href: "#difference", label: "MAKE A DIFFERENCE" },
     { href: "#partners", label: "PARTNERS" },
     { href: "#contact", label: "CONTACT" },
   ];
@@ -28,7 +28,7 @@ const Navbar = () => {
               className="flex items-center gap-2 hover:text-orange-500 transition-colors"
             >
               <Phone className="h-4 w-4" />
-              404.483.3297
+              404-483-3297
             </a>
             <a
               href="mailto:huhtorphans21@gmail.com"

@@ -79,7 +79,7 @@ const content = [
 
 export default function Project() {
   return (
-    <section className="w-full h-screen" id="projects">
+    <section className="w-full max-h-screen" id="projects">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
