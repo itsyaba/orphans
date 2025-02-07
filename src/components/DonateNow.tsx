@@ -1,5 +1,8 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { Lock } from "lucide-react";
+import toast from "react-hot-toast";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,8 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Lock } from "lucide-react";
-import toast from "react-hot-toast";
+import DonationDialog from "./donation-dialog";
 
 // PayPal Client ID from environment variables
 const clientId =
@@ -19,9 +21,10 @@ const clientId =
 
 const PRESET_AMOUNTS = [10, 25, 50, 100, 250];
 
-const DonateNow: React.FC = () => {
+export default function DonateNow() {
   const [amount, setAmount] = useState<string>("10.00");
   const [selectedPreset, setSelectedPreset] = useState<number | null>(10);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handlePresetClick = (value: number) => {
@@ -30,7 +33,7 @@ const DonateNow: React.FC = () => {
   };
 
   const handleCustomAmount = (value: string) => {
-    const parsedValue = parseFloat(value);
+    const parsedValue = Number.parseFloat(value);
     if (!isNaN(parsedValue) && parsedValue >= 1) {
       setAmount(parsedValue.toFixed(2));
       setSelectedPreset(null);
@@ -48,10 +51,10 @@ const DonateNow: React.FC = () => {
   return (
     <PayPalScriptProvider options={{ clientId }}>
       <Card
-        className="w-full border-none bg-charity-orange/30 rounded-none min-h-[90vh] text-charity-green flex items-center justify-center"
+        className="w-full border-none bg-charity-orange/30 rounded-none min-h-[75vh] text-charity-green overflow-y-auto"
         id="donate"
       >
-        <div className="container mx-auto lg:w-3/6">
+        <div className="container mx-auto lg:w-3/6 py-8">
           <CardHeader>
             <CardTitle className="text-5xl font-bold text-center mb-8">Choose Amount</CardTitle>
             <CardDescription className="text-md text-center max-w-6xl mx-auto mb-16 leading-relaxed text-charity-green px-2 md:px-6">
@@ -104,15 +107,23 @@ const DonateNow: React.FC = () => {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col gap-4 w-full">
-            <div style={{ width: "100%" }}>
+            <Button
+              onClick={() => setIsDialogOpen(true)}
+              className="w-full py-6 text-lg bg-charity-green text-white hover:bg-charity-green/90 rounded-3xl"
+              size="lg"
+            >
+              Offline Donation
+            </Button>
+
+            <div className="w-full">
               <PayPalButtons
                 style={{
-                  layout: "horizontal", // Options: 'vertical', 'horizontal'
-                  color: "gold", // Options: 'gold', 'blue', 'silver', 'white', 'black'
-                  shape: "pill", // Options: 'rect', 'pill'
-                  label: "paypal", // Options: 'paypal', 'checkout', 'buynow', 'pay', 'installment'
-                  tagline: true, // Show or hide the tagline
-                  height: 55, // Adjust to match your button height
+                  layout: "horizontal",
+                  color: "gold",
+                  shape: "pill",
+                  label: "paypal",
+                  tagline: true,
+                  height: 55,
                 }}
                 createOrder={(_data, actions) => {
                   if (!actions.order) {
@@ -152,8 +163,12 @@ const DonateNow: React.FC = () => {
           </CardFooter>
         </div>
       </Card>
+
+      <DonationDialog
+        amount={amount}
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+      />
     </PayPalScriptProvider>
   );
-};
-
-export default DonateNow;
+}
