@@ -9,6 +9,7 @@ import Programs from "./components/programs";
 import Partners from "./components/partners";
 import Project from "./components/project";
 import TornPaper from "./components/TornPaper";
+import DonateNow from "./components/DonateNow";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Project />
       <Programs />
       <Partners />
+      <DonateNow />
       <Contact />
       <Footer />
     </>

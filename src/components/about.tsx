@@ -35,7 +35,7 @@ const AboutCard = ({
       )}
     >
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50"></div>
-      <div className="relative z-50 h-3/6 cursor-text mb-5">
+      <div className="relative z-50 md:h-3/6 cursor-text mb-5">
         <h1 className="font-bold text-xl md:text-3xl text-gray-50 relative">{title}</h1>
         <h2 className="font-semibold text-xl md:text-xl text-gray-50 relative">{subtitle}</h2>
         <p className="font-normal text-base text-gray-50 relative my-4 leading-relaxed">{text}</p>
@@ -49,7 +49,7 @@ const About = () => {
   return (
     <section className="relative py-24 overflow-hidden" id="story">
       {/* Yellow Wave Background */}
-      <div className="absolute bottom-0 left-0 right-0 h-48 bg-charity-orange -skew-y-3 transform origin-left scale-110" />
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-charity-orange -skew-y-12 md:-skew-y-3 transform origin-left scale-110" />
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-charity-orange  transform origin-left scale-110" />
 
       <div className="container mx-auto px-4 relative">
@@ -67,7 +67,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{ delay: 0.2 }}
-          className="text-xl text-center max-w-6xl mx-auto mb-16 leading-relaxed text-charity-green"
+          className="text-md  md:text-xl text-center max-w-6xl mx-auto mb-16 leading-relaxed text-charity-green"
         >
           HUHT stands for Help Us Help Them and our mission is to provide orphanages the necessary
           tools needed to ensure that each child has the basic necessities for a normal childhood.

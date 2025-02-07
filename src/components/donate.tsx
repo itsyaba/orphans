@@ -12,10 +12,10 @@ const Donate = () => {
       </div>
       <div className="relative z-10 container px-4 flex flex-col justify-center items-center  text-center mx-auto w-full h-screen">
         <div className="">
-          <p className="text-charity-orange font-bold font-cursive mb-4 text-lg md:text-2xl  subtitle  ">
+          <p className="text-charity-orange font-bold font-cursive mb-4 text-md md:text-2xl  subtitle  ">
             Compassion in Action. Text Us Today
           </p>
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-white text-3xl md:text-6xl font-bold mb-6 leading-tight">
             Children Need Your Help
             <br />
             By Donating Today
