@@ -39,7 +39,7 @@ const Programs = () => {
             in their by providing them with hygiene kits, school supplies and tuition.{" "}
           </li>
         </ul>
-        <span className="block mt-8 font-semibold subtitle">Pick a choice and change a life.</span>
+        <span className="block mt-8 font-semibold subtitle">Make a choice by changing a life.</span>
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mx-auto w-full gap-16 ">
         <ProgramCard
