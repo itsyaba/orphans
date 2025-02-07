@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import kids from "@/assets/school-kids2.jpg";
+import schoolKids from "@/assets/school-kids11.jpg";
+import classRoom from "@/assets/classroom1.jpg";
 
 const Programs = () => {
   return (
@@ -42,18 +45,9 @@ const Programs = () => {
         <span className="block mt-8 font-semibold subtitle">Make a choice by changing a life.</span>
       </motion.p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center mx-auto w-full gap-16 ">
-        <ProgramCard
-          image="https://images.unsplash.com/photo-1500823050524-096fd13fa287?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          title="Feed an orphan"
-        />
-        <ProgramCard
-          image="https://images.unsplash.com/photo-1610500795224-fb86b02926d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          title="Change Life"
-        />
-        <ProgramCard
-          image="https://images.unsplash.com/photo-1521493959102-bdd6677fdd81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          title="Maximize your impact"
-        />
+        <ProgramCard image={schoolKids} title="Feed an orphan" />
+        <ProgramCard image={kids} title="Change Life" />
+        <ProgramCard image={classRoom} title="Maximize your impact" />
       </div>
     </section>
   );
@@ -70,7 +64,7 @@ export function ProgramCard({ image, title }: { image: string; title: string }) 
         )}
         style={{
           backgroundImage: `url(${image})`,
-          backgroundPosition: "center top",
+          backgroundPosition: "center ",
           backgroundSize: "cover",
         }}
       >

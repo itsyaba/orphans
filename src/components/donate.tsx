@@ -1,14 +1,15 @@
 import { ArrowRight } from "lucide-react";
+import schoolKids from "@/assets/schoolkids.jpg";
 const Donate = () => {
   return (
     <div className="relative min-h-[80vh] bg-black my-36">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1632932724779-8af3bdae9d1d"
+          src={schoolKids}
           alt="Happy child"
-          className="w-full h-full object-cover opacity-80 object-left-bottom"
+          className="w-full h-full object-cover opacity-90 object-left-bottom"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
       </div>
       <div className="relative z-10 container px-4 flex flex-col justify-center items-center  text-center mx-auto w-full h-screen">
         <div className="">

@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className="fixed top-0 left-0 right-0 z-[999]">
       {/* Contact Info Bar */}
       <div className="bg-white/95 ">
         <div className="container mx-auto py-2 px-4">
@@ -64,9 +64,11 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6">
-                DONATE NOW
-              </Button>
+              <a href="#donate">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6">
+                  DONATE NOW
+                </Button>
+              </a>
             </div>
 
             {/* Mobile Navigation */}

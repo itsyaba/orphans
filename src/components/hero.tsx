@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-
+import HeroBg from "@/assets/kids2.jpg";
 const Hero = () => {
   return (
     <div className="relative h-screen  bg-black/90 flex items-center justify-center" id="#home">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?auto=format&fit=crop&q=80"
+          src={HeroBg}
           alt="Hero background"
           className="w-full h-full object-cover object-center brightness-50"
         />
@@ -21,12 +21,14 @@ const Hero = () => {
             comfortable, cared for and loved. We believe that each child should be well fed and have
             a fair chance at basic education.
           </p>
-          <Button
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg"
-            size="lg"
-          >
-            DONATE NOW
-          </Button>
+          <a href="#donate">
+            <Button
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg"
+              size="lg"
+            >
+              DONATE NOW
+            </Button>
+          </a>
         </div>
       </div>
     </div>

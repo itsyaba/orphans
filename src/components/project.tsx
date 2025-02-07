@@ -1,6 +1,9 @@
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { motion } from "framer-motion";
-
+import Book from "@/assets/book.jpg";
+import BoldKid from "@/assets/boldChild.jpg";
+import classroom from "@/assets/classroom1.jpg";
+import BunchOfKids from "@/assets/22-300x225.jpg";
 const content = [
   {
     title: "Modern African Cookbook",
@@ -9,7 +12,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <img
-          src="https://images.unsplash.com/photo-1495546968767-f0573cca821e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={Book}
           width={600}
           height={600}
           className="h-full w-full object-cover"
@@ -25,7 +28,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={classroom}
           width={600}
           height={600}
           className="h-full w-full object-cover"
@@ -41,7 +44,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <img
-          src="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80"
+          src={BoldKid}
           width={600}
           height={600}
           className="h-full w-full object-cover"
@@ -57,7 +60,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <img
-          src="https://images.unsplash.com/photo-1506538000963-d8753e7eeb30?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={BunchOfKids}
           width={600}
           height={600}
           className="h-full w-full object-cover"

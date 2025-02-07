@@ -28,6 +28,63 @@ html
   scroll-padding-top: 140px;
 }
 
+/* styles.css */
+.custom-card
+{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 24rem;
+  /* h-96 */
+  border-radius: 0.375rem;
+  /* rounded-md */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* shadow-xl */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  /* p-4 */
+  border-width: 1px;
+  border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* bg-black/20 */
+  transition: all 0.5s;
+  /* transition-all duration-500 */
+}
+
+.custom-card::before
+{
+  content: '';
+  background-image: url('https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80');
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.custom-card:hover
+{
+  background-image: url('https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80');
+}
+
+.custom-card:hover::after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
 @layer base
 {
   :root

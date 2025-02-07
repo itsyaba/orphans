@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-
+import kidsImg from "@/assets/22-300x225.jpg";
 // UI ACETERNITY
 const AboutCard = ({
   text,
@@ -24,15 +23,12 @@ const AboutCard = ({
       //   "bg-white rounded-3xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300",
       //   className
       // )}
-      className={cn(
-        "group w-full  overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800 bg-black/20 transform",
-        "bg-[url(https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&&auto=format&fit=crop&w=1650&q=80)] bg-cover ",
-        `before:bg-[url(https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]`,
-        `hover:bg-[url(https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80)]`,
-        "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
-        "transition-all duration-500",
-        className
-      )}
+      className={`custom-card ${className}`}
+      style={{
+        backgroundImage: `url(${kidsImg})`,
+        backgroundPosition: "center top",
+        backgroundSize: "cover",
+      }}
     >
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50"></div>
       <div className="relative z-50 md:h-3/6 cursor-text mb-5">
