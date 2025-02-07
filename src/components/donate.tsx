@@ -7,7 +7,7 @@ const Donate = () => {
         <img
           src={schoolKids}
           alt="Happy child"
-          className="w-full h-full object-cover opacity-90 object-left-bottom"
+          className="w-full h-full object-cover opacity-90 object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
       </div>
