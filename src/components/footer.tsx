@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Mail } from "lucide-react";
-
+import Logo from "@/assets/orphanLogo.jpg";
 export default function Footer() {
   return (
     <footer className="bg-[#1a2421] text-white px-4 py-12 md:px-6 lg:px-8 ">
@@ -8,7 +8,9 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="w-full md:w-4/6 ">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <span className="text-xl font-semibold">Logo</span>
+              <span className="text-xl font-semibold">
+                <img src={Logo} alt="HUHT Logo" className=" w-24 h-12 lg:w-32 lg:h-16 rounded-md" />
+              </span>
             </a>
             <p className="text-gray-400">
               We are a non-profit organization with a firm commitment to ensure that each orphan is

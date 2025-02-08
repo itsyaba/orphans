@@ -107,7 +107,6 @@ export default function PartnersPage() {
           </motion.div>
         </div>
 
-        {/* Partnership CTA */}
         <motion.div
           variants={item}
           className="mt-16 rounded-2xl bg-gradient-to-r from-charity-orange to-charity-orange/60 p-8 text-center text-white"

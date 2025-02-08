@@ -14,6 +14,7 @@ const Navbar = () => {
     { href: "#programs", label: "PROGRAMS" },
     // { href: "#difference", label: "MAKE A DIFFERENCE" },
     { href: "#partners", label: "PARTNERS" },
+    { href: "#gallery", label: "GALLERY" },
     { href: "#contact", label: "CONTACT" },
   ];
 
