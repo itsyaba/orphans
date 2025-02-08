@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import kidsImg from "@/assets/22-300x225.jpg";
+import kidsImg from "@/assets/aboutBg.jpg";
 // UI ACETERNITY
 const AboutCard = ({
   text,

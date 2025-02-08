@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import schoolKids from "@/assets/schoolkids.jpg";
+import schoolKids from "@/assets/donateBg.jpg";
 const Donate = () => {
   return (
     <div className="relative min-h-[80vh] bg-black my-36">
@@ -25,16 +25,18 @@ const Donate = () => {
             Become Volunteer
             <ArrowRight className="w-5 h-5 -rotate-45" />
           </button> */}
-          <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-lg font-semibold leading-6  text-white inline-block">
-            <span className="absolute inset-0 overflow-hidden rounded-full">
-              <span className="absolute inset-0 rounded-full bg-zinc-900 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-            </span>
-            <div className="relative flex space-x-2 items-center z-10 rounded-full bg-charity-orange py-4 px-8 ring-1 ring-white/10 ">
-              <span> Become Volunteer</span>
-              <ArrowRight />
-            </div>
-            <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
-          </button>
+          <a href="#donate">
+            <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-lg font-semibold leading-6  text-white inline-block group transition-all">
+              <span className="absolute inset-0 overflow-hidden rounded-full">
+                <span className="absolute inset-0 rounded-full bg-zinc-900 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+              </span>
+              <div className="relative flex space-x-2 items-center z-10 rounded-full bg-charity-orange py-4 px-8 ring-1 ring-white/10 ">
+                <span> Become Volunteer</span>
+                <ArrowRight className="group-hover:scale-110 transition-all" />
+              </div>
+              <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+            </button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import kids from "@/assets/school-kids2.jpg";
-import schoolKids from "@/assets/school-kids11.jpg";
+import schoolKids from "@/assets/feedProjects.jpg";
 import classRoom from "@/assets/classroom1.jpg";
 
 const Programs = () => {
@@ -64,7 +64,7 @@ export function ProgramCard({ image, title }: { image: string; title: string }) 
         )}
         style={{
           backgroundImage: `url(${image})`,
-          backgroundPosition: "center ",
+          backgroundPosition: "right center ",
           backgroundSize: "cover",
         }}
       >

@@ -1,9 +1,9 @@
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { motion } from "framer-motion";
 import Book from "@/assets/book.jpg";
-import BoldKid from "@/assets/boldChild.jpg";
-import classroom from "@/assets/classroom1.jpg";
-import BunchOfKids from "@/assets/22-300x225.jpg";
+import BoldKid from "@/assets/feed.jpg";
+import classroom from "@/assets/classRoomNew.jpg";
+import BunchOfKids from "@/assets/maternity.jpg";
 const content = [
   {
     title: "Modern African Cookbook",

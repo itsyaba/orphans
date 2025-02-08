@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import HeroBg from "@/assets/kids2.jpg";
+import HeroBg from "@/assets/heroBg.jpg";
 const Hero = () => {
   return (
     <div className="relative h-screen  bg-black/90 flex items-center justify-center" id="#home">
@@ -7,7 +7,7 @@ const Hero = () => {
         <img
           src={HeroBg}
           alt="Hero background"
-          className="w-full h-full object-cover object-center brightness-50"
+          className="w-full h-full object-cover object-right-top brightness-90"
         />
       </div>
 
