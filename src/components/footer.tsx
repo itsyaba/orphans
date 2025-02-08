@@ -122,7 +122,11 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-900 text-center text-sm text-gray-400">
           <p>
             © Copyright 2025 |{" "}
-            <a href="https://nileode.com/" className="text-[#ff5733] hover:text-[#e64d2e]">
+            <a
+              href="https://nileode.com/"
+              target="_blank"
+              className="text-[#ff5733] hover:text-[#e64d2e]"
+            >
               Nileode Technologies
             </a>{" "}
             | All right reserved.

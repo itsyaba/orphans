@@ -31,7 +31,7 @@ export default function DonationDialogSuccess({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[425px] bg-white text-charity-green font-medium">
+      <DialogContent className="sm:max-w-[425px] bg-white text-charity-green font-medium ">
         <DialogHeader>Donation Confirmation</DialogHeader>
         <DialogDescription>
           <div className="space-y-4 rounded-lg border p-4 text-gray-800">

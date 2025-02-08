@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -33,16 +34,16 @@ export default function Contact() {
     setIsSubmitting(true);
 
     const serviceID = "service_nc6zvsa";
-    const templateID = "template_719uh5d";
+    const templateID = "template_85klmri";
     const userID = "atkoIvKSPAVeQsWDv";
 
     try {
       await emailjs.send(serviceID, templateID, data, userID);
-      alert("Message sent successfully!");
+      toast.success("Message Sent Successfully!");
       form.reset();
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("Failed to send message.");
+      toast.error("Failed to send message.");
     } finally {
       setIsSubmitting(false);
     }
