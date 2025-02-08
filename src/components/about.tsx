@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import kidsImg from "@/assets/aboutBg.jpg";
+import kids1Img from "@/assets/changeLife.jpg";
+import kids2Img from "@/assets/classroom1.jpg";
 // UI ACETERNITY
 const AboutCard = ({
   text,
   title,
   subtitle,
   className,
+  image,
 }: {
   image: string;
   text: string;
@@ -25,7 +28,7 @@ const AboutCard = ({
       // )}
       className={`custom-card ${className}`}
       style={{
-        backgroundImage: `url(${kidsImg})`,
+        backgroundImage: `url(${image})`,
         backgroundPosition: "center top",
         backgroundSize: "cover",
       }}
@@ -76,19 +79,19 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
           <AboutCard
-            image="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80"
+            image={kids1Img}
             text="We are committed in giving our orphans a quality education by giving them the materials that they need to succeed."
             title="Huht Making a Difference School Supplies"
             subtitle="School Supplies"
           />
           <AboutCard
-            image="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80"
+            image={kids2Img}
             text="One meal at a time. That is where we start. Have you ever gone hungry for a day? If you have you will know that it is all consuming, you can`t concentrate on anything. Finding food is all you think about. "
             title="Contact Huht"
             subtitle="Cloth/feed an orphan"
           />
           <AboutCard
-            image="https://images.unsplash.com/photo-1497375638960-ca368c7231e4?auto=format&fit=crop&q=80"
+            image={kidsImg}
             text="We are committed in giving our newborn babies a decent arrival by providing basic yet vital supplies for a maternity room"
             title="Huht Partners"
             subtitle="Equip a maternity"

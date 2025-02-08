@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-[#1a2421] text-white px-4 py-12 md:px-6 lg:px-8 ">
       <div className="md:container mx-auto">
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-3 w-full gap-8 ">
-          {/* Logo and Description */}
           <div className="w-full md:w-4/6 ">
             <a href="/" className="flex items-center gap-2 mb-4">
               <span className="text-xl font-semibold">
