@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import Logo from "@/assets/orphanLogo.jpg";
+import Logo from "@/assets/HUHT LOGO-04.png";
 import { Mail, Menu, Phone } from "lucide-react";
 import { useState } from "react";
 
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2">
-              <img src={Logo} alt="Logo" className=" w-24 h-12 lg:w-32 lg:h-16 rounded-md" />
+              <img src={Logo} alt="Logo" className=" w-24 h-12 lg:w-36 lg:h-full rounded-md" />
             </a>
 
             {/* Desktop Navigation */}
